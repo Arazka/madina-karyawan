@@ -1,0 +1,21 @@
+export type Karyawan = {
+    id: number;
+    nik: string;
+    nama_lengkap: string;
+    jenis_kelamin: 'L' | 'P';
+    tempat_lahir: string;
+    tanggal_lahir: string;
+    no_telepon: string;
+    email: string;
+    jabatan: string;
+    tanggal_masuk: string;
+    provinsi_id: string;
+    provinsi_nama: string;
+    kabupaten_id: string;
+    kabupaten_nama: string;
+    kecamatan_id: string;
+    kecamatan_nama: string;
+    desa_id: string;
+    desa_nama: string;
+    alamat_detail: string;
+};
