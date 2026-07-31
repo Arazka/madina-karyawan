@@ -1,5 +1,5 @@
 import { Link, useForm } from '@inertiajs/react';
-import { Pencil, Search, SlidersHorizontal, Trash2 } from 'lucide-react';
+import { Eye, Pencil, Search, SlidersHorizontal, Trash2 } from 'lucide-react';
 import { useState } from 'react';
 import DialogDelete from '@/components/index/dialog-delete';
 import EmptyData from '@/components/index/empty-data';
@@ -137,7 +137,15 @@ export default function Index({ karyawans }: Props) {
                                                 href={`karyawan/${data.id}/edit`}
                                             >
                                                 <Pencil />
-                                                {/* Edit */}
+                                            </Link>
+                                        </Button>
+                                        <Button
+                                            asChild
+                                            size={`icon-sm`}
+                                            variant={`show`}
+                                        >
+                                            <Link href={`karyawan/${data.id}`}>
+                                                <Eye />
                                             </Link>
                                         </Button>
                                         <Button
